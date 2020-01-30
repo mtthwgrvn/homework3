@@ -9,12 +9,13 @@ Make sure to learn what the starter code does!!
 */
 
 body{
-  color: black;
-  font-family: sans-serif;
+  font-family: "Andika", sans-serif;
   font-size: 16px;
   margin: 1.2em;
+  background-image: url("../images/pigeon-background.JPEG");
   background-size: cover ;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 main{
@@ -22,7 +23,8 @@ main{
 }
 
 h1{
-  color: #8000FF;
+  color: #7500EB;
+  background: transparent;
   font-size: 2em;
   line-height: 1.5;
   text-align: center;
@@ -32,37 +34,96 @@ caption{
   margin:5px 0px;
 }
 
-p{}
-
-a{}
-
-table{
-    border: 2px solid black;
+p{
+  color: black;
+  font-size: 16px;
+  padding-top: 10px;
 }
 
+a{
+  color: #C12258;
+  font-size: 16px;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+}
+table{
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 2px solid black;
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .colhead{
   background-color: #7e0820;
   color: white;
+  width: 100px;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
 }
-
-.rowhead{}
-
-td{
+.colhead:first-child{
+  border-top-left-radius: 15px;
+}
+.colhead:last-child{
+  border-top-right-radius: 15px;
+}
+.rowhead{
+  border-top: 2px solid black;
+}
+tr:last-child td:first-child{
+  border-bottom-left-radius: 15px;
+  border-color: #000000;
+}
+tr:last-child td:last-child{
+  border-bottom-right-radius: 15px;
+  border-color: #000000;
+}
+tr:last-child .rowhead{
+  border-bottom-left-radius: 15px;
+}
+tr:last-child td:last-child{
+  border-bottom-right-radius: 15px;
+}
+td,
+tr{
+  border-top: 2px solid black;
   padding: 15px;
+  text-align: center;
+}
+tr:nth-child(odd){
+  background-color: #D1D1D1;
+}
+tr:nth-child(even){
+  border-top: 2px solid black;
+  background-color: transparent;
+}
+tr:hover{
+  background-color: #7e0820;
+  opacity: .5;
+  color: white;
+}
+*:focus{
+  border: 2px solid black;
 }
 
-tr{}
-
-*{}
-
-thead tr:first-child th:first-child{}
+thead tr:first-child th:first-child{
+  border-top-left-radius: 15px;
+}
 
 footer{
   position:fixed;
   left:0px;
   bottom:0px;
   width:100%;
+  height: 60px;
   background:black;
-  text-align:center;
+  text-align: center;
   color: white;
+}
+footer p {
+  color: #ffffff;
+  text-align: center;
+  padding-right: 10px;
+  padding-bottom: 10px;
 }
