@@ -32,6 +32,7 @@ h1{
 
 caption{
   margin:5px 0px;
+  padding-bottom: 10px;
 }
 
 p{
@@ -46,7 +47,9 @@ a{
   text-decoration-line: underline;
   text-decoration-style: wavy;
 }
+
 table{
+  color: black;
   border-collapse: separate;
   border-spacing: 0;
   border: 2px solid black;
@@ -54,6 +57,10 @@ table{
   margin-left: auto;
   margin-right: auto;
 }
+thead{
+  padding-top: 10px;
+}
+
 .colhead{
   background-color: #7e0820;
   color: white;
@@ -68,47 +75,46 @@ table{
 .colhead:last-child{
   border-top-right-radius: 15px;
 }
+
 .rowhead{
   border-top: 2px solid black;
 }
-tr:last-child td:first-child{
-  border-bottom-left-radius: 15px;
-  border-color: #000000;
-}
-tr:last-child td:last-child{
-  border-bottom-right-radius: 15px;
-  border-color: #000000;
-}
-tr:last-child .rowhead{
-  border-bottom-left-radius: 15px;
-}
-tr:last-child td:last-child{
-  border-bottom-right-radius: 15px;
-}
+
 td,
 tr{
   border-top: 2px solid black;
   padding: 15px;
   text-align: center;
 }
+tr:last-child .rowhead{
+  border-bottom-left-radius: 15px;
+  border-color: #000000;
+}
+tr:last-child td:last-child{
+  border-bottom-right-radius: 15px;
+  border-color: #000000;
+}
 tr:nth-child(odd){
   background-color: #D1D1D1;
+  transition-property: background;
+  transition-duration: 1s;
+  transition-timing-function: linear;
 }
 tr:nth-child(even){
   border-top: 2px solid black;
   background-color: transparent;
+  transition-property: background;
+  transition-duration: 1s;
+  transition-timing-function: linear;
 }
-tr:hover{
-  background-color: #7e0820;
+
+tbody tr:hover{
+  background-color: #7e0832;
   opacity: .5;
   color: white;
 }
 *:focus{
   border: 2px solid black;
-}
-
-thead tr:first-child th:first-child{
-  border-top-left-radius: 15px;
 }
 
 footer{
