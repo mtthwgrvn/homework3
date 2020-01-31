@@ -109,9 +109,8 @@ tr:nth-child(even){
 }
 
 tbody tr:hover{
-  background-color: #7e0832;
-  opacity: .5;
-  color: white;
+  color: #000000;
+  background-color: rgb(126, 8, 32, .5);
 }
 *:focus{
   border: 2px solid black;
